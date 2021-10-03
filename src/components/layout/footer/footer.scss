@@ -1,15 +1,14 @@
 .footer {
-  grid-area: foot;
-  background: url("../../../img/footer.png") no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  @media (max-width: 1139px) {
-    background-size: cover;
-  }
-  @media (max-width: 767px) {
-    background: url("../../../img/footer-mob.png") no-repeat;
-    height: 64px;
-  }
+    grid-area: foot;
+    background: url('../../../img/footer.png') no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    @media (max-width: 1139px) {
+        background-size: cover;
+    }
+    @media (max-width: 767px) {
+        background: url('../../../img/footer-mob.png') no-repeat;
+        height: 64px;
+    }
 }
-

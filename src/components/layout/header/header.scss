@@ -1,29 +1,29 @@
 .header {
-  grid-area: head;
-  background-color: #181E30;
-  padding: 40px 50px 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  @media (max-width: 1139px) {
-    padding: 20px 20px 0;
-  }
-  @media (max-width: 767px) {
-    grid-template-columns: auto 1fr auto;
-    padding: 15px 15px 0;
-  }
-  &__mob-menu {
-    display: none;
-    padding: 0;
-    @media (max-width: 767px) {
-      display: block;
+    grid-area: head;
+    background-color: #181e30;
+    padding: 40px 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    @media (max-width: 1139px) {
+        padding: 20px 20px 0;
     }
-  }
-  &__mob-logo {
-    display: none;
     @media (max-width: 767px) {
-      display: flex;
-      justify-content: center;
+        grid-template-columns: auto 1fr auto;
+        padding: 15px 15px 0;
     }
-  }
+    &__mob-menu {
+        display: none;
+        padding: 0;
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+    &__mob-logo {
+        display: none;
+        @media (max-width: 767px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }

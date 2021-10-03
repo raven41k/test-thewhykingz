@@ -1,31 +1,28 @@
 .search-form {
-  position: relative;
-  @media (max-width: 767px) {
-    grid-row: 2 / 2;
-    grid-column: 1 / 4;
-    margin-top: 15px;
-  }
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    border: 1px solid #8B8E97;
-    border-radius: 6px;
-    padding: 4.5px 0;
-  }
-  &__input {
-    border: none;
-    outline: none;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 700;
-    color: #8B8E97;
-    width: 100%;
-    background-color: #181e30 !important;
-    &:focus {
-      background: transparent;
+    position: relative;
+    @media (max-width: 767px) {
+        grid-row: 2 / 2;
+        grid-column: 1 / 4;
+        margin-top: 15px;
     }
-  }
-  &__btn {
-
-  }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        border: 1px solid #8b8e97;
+        border-radius: 6px;
+        padding: 4.5px 0;
+    }
+    &__input {
+        border: none;
+        outline: none;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 700;
+        color: #8b8e97;
+        width: 100%;
+        background-color: #181e30 !important;
+        &:focus {
+            background: transparent;
+        }
+    }
 }

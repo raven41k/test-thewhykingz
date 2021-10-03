@@ -10,21 +10,21 @@ import store from '../../redux/store';
 import './app.scss';
 
 const App = () => {
-return (
-    <Provider store={store}>
-      <Router>
-        <div className="container">
-          <Navbar />
-          <Header/>
-            <main className='main'>
-                <Route exact path="/" component={HomePage} />
-                <Route exact path="/team/:id" component={Team} />
-            </main>
-          <Footer />
-        </div>
-      </Router>
-    </Provider>
-);
-}
+    return (
+        <Provider store={store}>
+            <Router>
+                <div className="container">
+                    <Navbar />
+                    <Header />
+                    <main className="main">
+                        <Route exact path="/" component={HomePage} />
+                        <Route exact path="/team/:id" component={Team} />
+                    </main>
+                    <Footer />
+                </div>
+            </Router>
+        </Provider>
+    );
+};
 
 export default App;

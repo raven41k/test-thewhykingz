@@ -1,98 +1,98 @@
 .team-page {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  @media (max-width: 1139px) {
-    flex-direction: column;
-  }
-  &__title-block {
-    margin: 0;
-    font-size: 28px;
-    color: #fff;
-    font-weight: 700;
-    @media (max-width: 767px) {
-      font-size: 24px;
-    }
-  }
-  .left-section {
-    width: 50%;
-    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     @media (max-width: 1139px) {
-      order: 2;
-      margin-right: 0;
-      margin-top: 25px;
+        flex-direction: column;
     }
-    @media (max-width: 767px) {
-      display: none;
+    &__title-block {
+        margin: 0;
+        font-size: 28px;
+        color: #fff;
+        font-weight: 700;
+        @media (max-width: 767px) {
+            font-size: 24px;
+        }
     }
-    .left-section__header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      .btn {
-        padding: 0;
-      }
+    .left-section {
+        width: 50%;
+        margin-right: 100px;
+        @media (max-width: 1139px) {
+            order: 2;
+            margin-right: 0;
+            margin-top: 25px;
+        }
+        @media (max-width: 767px) {
+            display: none;
+        }
+        .left-section__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .btn {
+                padding: 0;
+            }
+        }
+        &__list {
+            margin-top: 40px;
+            ul {
+                display: grid;
+                grid-row-gap: 40px;
+            }
+            &__item {
+                display: grid;
+                align-items: center;
+                grid-template-columns: auto 1fr auto auto;
+                grid-column-gap: 20px;
+                justify-content: space-between;
+                &__photo {
+                    width: 48px;
+                    height: 48px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    display: block;
+                    overflow: hidden;
+                }
+                &__desc {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    justify-content: space-around;
+                    &__name {
+                        font-size: 16px;
+                        color: #fff;
+                        font-weight: 700;
+                    }
+                    &__small-name {
+                        font-size: 10px;
+                        color: #8b8e97;
+                    }
+                }
+                &__time {
+                    color: #fff;
+                    font-size: 12px;
+                }
+                &__btn {
+                    padding: 0;
+                }
+            }
+        }
     }
-    &__list {
-      margin-top: 40px;
-      ul {
-        display: grid;
-        grid-row-gap: 40px;
-      }
-      &__item {
-        display: grid;
-        align-items: center;
-        grid-template-columns: auto 1fr auto auto;
-        grid-column-gap: 20px;
-        justify-content: space-between;
+    .right-section {
+        @media (max-width: 767px) {
+            width: 100%;
+        }
         &__photo {
-          width: 48px;
-          height: 48px;
-          object-fit: cover;
-          border-radius: 50%;
-          display: block;
-          overflow: hidden;
+            max-height: 390px;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-top: 30px;
+            @media (max-width: 767px) {
+                height: 160px;
+                object-fit: cover;
+                display: block;
+                margin: 15px auto 0;
+            }
         }
-        &__desc {
-          display: flex;
-          flex-direction: column;
-          height: 100%;
-          justify-content: space-around;
-          &__name {
-            font-size: 16px;
-            color: #fff;
-            font-weight: 700;
-          }
-          &__small-name {
-            font-size: 10px;
-            color: #8B8E97;
-          }
-        }
-        &__time {
-          color: #fff;
-          font-size: 12px;
-        }
-        &__btn {
-          padding: 0;
-        }
-      }
     }
-  }
-  .right-section {
-    @media (max-width: 767px) {
-      width: 100%;
-    }
-    &__photo {
-      max-height: 390px;
-      border-radius: 16px;
-      overflow: hidden;
-      margin-top: 30px;
-      @media (max-width: 767px) {
-        height: 160px;
-        object-fit: cover;
-        display: block;
-        margin: 15px auto 0;
-      }
-    }
-  }
 }

@@ -1,32 +1,42 @@
 .team-list {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  max-height: 375px;
-  background-color: #181E30;
-  padding: 15px;
-  box-shadow: 0px 4px 20px 0px #00000066;
-  z-index: 9;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 375px;
+    background-color: #181e30;
+    padding: 15px;
+    box-shadow: 0px 4px 20px 0px #00000066;
+    z-index: 9;
+    overflow-y: scroll;
 
-  &__item {
-    display: flex;
-    align-items: center;
-    &:not(:last-child) {
-      margin-bottom: 15px;
+    &::-webkit-scrollbar {
+        width: 3px;
     }
-    &__photo {
-      border-radius: 50%;
-      overflow: hidden;
-      width: 24px;
-      height: 24px;
-      margin-right: 24px;
-      display: block;
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(139, 142, 151, 0.3);
+        border-radius: 6px;
     }
-    &__name {
-      font-size: 14px;
-      color: #8B8E97;
-      font-weight: 700;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        &__photo {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 24px;
+            height: 24px;
+            margin-right: 24px;
+            display: block;
+        }
+        &__name {
+            font-size: 14px;
+            color: #8b8e97;
+            font-weight: 700;
+        }
     }
-  }
 }
