@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import {useSelector} from "react-redux";
 
@@ -18,6 +19,10 @@ const TeamCard = ({team}) => {
             }} />
         </Link>
     );
+}
+
+TeamCard.propTypes = {
+    team: PropTypes.object
 }
 
 export default TeamCard;
