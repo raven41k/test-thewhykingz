@@ -1,7 +1,7 @@
 .react-3d-carousel {
   .slider-container {
     .slider-left div, .slider-right div {
-      border: none;
+      border: none !important;
     }
     .slider-left div {
       .fa-arrow-left {

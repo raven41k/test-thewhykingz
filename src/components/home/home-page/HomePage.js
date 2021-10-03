@@ -1,14 +1,10 @@
 import React from 'react';
 import {useSelector} from 'react-redux';
-import stadiumSlider1 from '../../../img/stadium-slider1.jpg'
-import stadiumSlider2 from '../../../img/stadium-slider2.jpg'
 import stadiumSlider4 from '../../../img/stadium-slider3.jpg'
-import stadiumSlider5 from '../../../img/stadium-slider5.jpg'
 import {Carousel} from '3d-react-carousal';
 import './home-page.scss';
 
 const HomePage = () => {
-    const loading = useSelector(state => state?.teams.loading);
     let slides = [
         <img  src={stadiumSlider4} alt="1" />,
         <img  src={stadiumSlider4} alt="2" />  ,
@@ -18,8 +14,6 @@ const HomePage = () => {
         <div>
             <Carousel slides={slides}  interval={1000}/>
             <img src="https://picsum.photos/800/198/?random" alt="" className="main__img-mob"/>
-
-            {/*{loading ? <Spinner /> : <TeamList />}*/}
             <section className="featured">
                 <h2 className="featured__title">Featured</h2>
                 <small className="featured__subtitle">this week</small>
