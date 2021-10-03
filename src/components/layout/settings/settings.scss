@@ -1,0 +1,48 @@
+.header__settings {
+  display: flex;
+  justify-content: flex-end;
+  &__list {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    @media (max-width: 767px) {
+      grid-template-columns: auto;
+    }
+    &__item {
+      &--user {
+        img {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          overflow: hidden;
+          object-fit: cover;
+        }
+      }
+      &--notification {
+        button {
+          position: relative;
+          &:after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #E3556D;
+            top: -4px;
+            right: 0;
+            position: absolute;
+            display: block;
+          }
+        }
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+      &--settings {
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
