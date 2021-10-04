@@ -26,6 +26,7 @@
                 align-items: center;
                 padding: 8px 50px;
                 position: relative;
+                transition: ease 0.3s;
                 @media (max-width: 1139px) {
                     padding: 8px 20px;
                 }
@@ -58,6 +59,7 @@
                     &:after {
                         opacity: 1;
                         left: 0;
+                        -webkit-animation-name: run;
                     }
                     .navbar__list__item__link__icon {
                         path {
@@ -93,6 +95,10 @@
         padding: 5px;
         cursor: pointer;
         margin-left: 50px;
+        transition: all 0.3s;
+        &:hover {
+            border: 2px solid #e3556d;
+        }
         @media (max-width: 1139px) {
             margin-left: 20px;
         }
@@ -104,5 +110,16 @@
         .icon {
             margin-right: 5px;
         }
+    }
+}
+@-webkit-keyframes run {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
     }
 }
